@@ -1,0 +1,36 @@
+.navbar {
+  padding-top: 10px;
+  background: #333;
+  background: rgba(51, 51, 51, 0.3);
+  border: 0;
+  transition: all .3s;
+}
+.navbar.navbar-no-bg { background: none; }
+
+ul.navbar-nav {
+  font-size: 16px;
+  color: #fff;
+}
+
+.navbar-inverse ul.navbar-nav li a { color: #fff; opacity: 0.8; border-bottom: 1px solid transparent; }
+.navbar-inverse ul.navbar-nav li a:hover { color: #fff; opacity: 1; border-bottom: 1px solid #fff; }
+.navbar-inverse ul.navbar-nav li a:focus { color: #fff; outline: 0; opacity: 1; border-bottom: 1px solid #fff; }
+
+.navbar-inverse ul.navbar-nav li a.btn-link-2 {
+  height: auto;
+  margin: 4px 0 0 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #fff;
+}
+.navbar-inverse ul.navbar-nav li a.btn-link-2:hover,
+.navbar-inverse ul.navbar-nav li a.btn-link-2:focus,
+.navbar-inverse ul.navbar-nav li a.btn-link-2:active,
+.navbar-inverse ul.navbar-nav li a.btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
+
+.navbar-brand {
+  width: 97px;
+  background: url(../img/logo.png) left center no-repeat;
+  background-size: contain;
+  text-indent: -99999px;
+}

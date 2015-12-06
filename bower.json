@@ -1,0 +1,25 @@
+{
+  "name": "groupeat-showcase",
+  "description": "Showcase website for GroupEat",
+  "main": "",
+  "authors": [
+    "groupeat <dev@groupeat.fr>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "groupeat-showcase"
+  ],
+  "moduleType": [],
+  "homepage": "https://groupeat.fr",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typicons.font": "typicons#~2.0.7"
+  }
+}
