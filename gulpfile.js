@@ -4,15 +4,15 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 var webpack = require('webpack');
 
-gulp.task('release', function(callback) {
+gulp.task('build', function(callback) {
     var path = require('path');
     var replace = require('gulp-replace');
     var config = require('./webpack.config.prod');
 
-    require('rimraf').sync('build/');
+    require('rimraf').sync('dist/');
 
-    gulp.src(['etc/*', 'img/**/*', 'mock/*'], {'base': '.'})
-        .pipe(gulp.dest('build/'));
+    gulp.src(['img/**/*'], {'base': '.'})
+        .pipe(gulp.dest('dist/'));
 
     webpack(config, function(err, stats) {
         if (err) {
@@ -20,15 +20,14 @@ gulp.task('release', function(callback) {
         }
         gutil.log('[webpack]', stats.toString());
         gulp.src(['index.html'], {'base': '.'})
-            .pipe(replace('common.bundle.js', stats.hash + '.common.bundle.js'))
             .pipe(replace('index.bundle.js', stats.hash + '.index.bundle.js'))
-            .pipe(gulp.dest('build/'))
+            .pipe(gulp.dest('dist/'))
             .on('end', callback);
     });
 });
 
 
-gulp.task('dev', function(callback) {
+gulp.task('watch', function(callback) {
     var WebpackDevServer = require('webpack-dev-server');
     var config = require('./webpack.config.dev');
 
@@ -45,26 +44,4 @@ gulp.task('dev', function(callback) {
     // keep the server alive or continue?
     // callback();
     });
-});
-
-gulp.task('test', function(callback) {
-    var resolve = require('path').resolve;
-    var config = require('./webpack.config.test');
-    var karma = require('karma');
-    var Server = karma.Server;
-
-    var compiler = webpack(config);
-    compiler.run(function(err, stats) {
-        if (err) {
-            gutil.log('webpack', err);
-            return;
-        }
-        Server.start({
-            configFile: resolve(__dirname, 'karma.conf.js')
-        }, function(exitCode) {
-            gutil.log('Karma has exited with ' + exitCode);
-            process.exit(exitCode);
-        });
-    });
-
 });

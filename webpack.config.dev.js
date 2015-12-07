@@ -1,4 +1,5 @@
 'use strict';
+
 var path = require('path');
 var webpack = require('webpack');
 
@@ -7,7 +8,7 @@ module.exports = {
         index: './js/index.js'
     },
     output: {
-        path: path.resolve(__dirname, 'build', 'js'),
+        path: path.resolve(__dirname, 'dist', 'js'),
         filename: '[name].bundle.js',
         chunkFilename: '[id].bundle.js',
         publicPath: 'js/'
@@ -48,11 +49,9 @@ module.exports = {
         root: [
             path.resolve(__dirname),
             path.resolve(__dirname, 'js/'),
-            path.resolve(__dirname, 'js/fw/')
         ]
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin('common.bundle.js'),
         new webpack.ProvidePlugin({
           $: 'jquery',
           jQuery: 'jquery'

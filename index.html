@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-itunes-app" content="app-id=1042435052">
@@ -13,8 +14,8 @@
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
 
   <!-- Favicon and touch icons -->
@@ -25,9 +26,361 @@
   <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 </head>
 <body>
-    <!-- Javascript -->
-    <script type="text/javascript" src="etc/config.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/common.bundle.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/index.bundle.js" charset="utf-8"></script>
+  <!-- Top content -->
+  <div class="top-content">
+
+    <!-- Top menu -->
+    <nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">GroupEat</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="top-navbar-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="scroll-link" href="#app-features">L'application</a></li>
+            <li><a class="scroll-link" href="#how-it-works">Comment ça marche ?</a></li>
+            <li><a class="scroll-link" href="#about-us">L'équipe</a></li>
+            <li><a class="scroll-link" href="#testimonials">Témoignages</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="inner-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 phone wow fadeInLeft">
+            <img src="img/devices/iphone.png" alt="">
+          </div>
+          <div class="col-sm-7 text wow fadeInUp">
+            <h1>Le prix de <strong>Groupe</strong> à la maison. <br>Maintenant disponible!</h1>
+            <div class="description">
+              <p>
+                GroupEat, c'est l'application de restauration livrée qui vous fait profiter des tarifs de groupe ! L'essayer c'est l'adopter !
+              </p>
+            </div>
+            <div class="top-big-link">
+              <a class="btn btn-link-2 scroll-link" href="#app-features">En savoir plus</a>
+            </div>
+            <div class="vendors">
+              <a href="https://itunes.apple.com/fr/app/groupeat/id1042435052?mt=8"><span class="typcn typcn-vendor-apple"></span></a>
+              <a href="https://play.google.com/store/apps/details?id=fr.groupeat.app"><span class="typcn typcn-vendor-android"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- App Features -->
+  <div class="app-features-container section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 app-features section-description wow fadeIn">
+          <h2>L'application</h2>
+          <div class="divider-1 wow fadeInUp"><span></span></div>
+          <p>
+            GroupEat te permet de commander tes plats préférés en bénéficiant de tarifs groupés. Plus d'utilisateurs rejoignent la commande, plus la réduction augmente. Si tu es étudiant à l'ENSTA ParisTech, Polytechnique ou Supoptique, tu peux dès maintenant bénéficier de réductions atteignant 42% !
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 app-features-wrapper wow fadeInUp">
+          <div class="app-features-box">
+            <div class="app-features-box-icon">
+              <span aria-hidden="true" class="typcn typcn-thumbs-up"></span>
+            </div>
+            <h3>Facile d'utilisation</h3>
+            <p>Passer sa commande ne prend que quelques minutes, le plus dur est de faire son choix sur les plats proposés par le restaurant !</p>
+          </div>
+          <div class="app-features-box">
+            <div class="app-features-box-icon">
+              <span aria-hidden="true" class="typcn typcn-stopwatch"></span>
+            </div>
+            <h3>Plutôt pressé ou économe ?</h3>
+            <p>En créant la commande, tu peux choisir le FoodRush, le temps pendant lequel les autres utilisateurs peuvent rejoindre ta commande avant qu'elle soit envoyée au restaurant.</p>
+          </div>
+        </div>
+        <div class="col-sm-4 app-features-image wow fadeInDown">
+          <img src="img/devices/iphone2.png" alt="">
+        </div>
+        <div class="col-sm-4 app-features-wrapper wow fadeInUp">
+          <div class="app-features-box">
+            <div class="app-features-box-icon">
+              <span aria-hidden="true" class="typcn typcn-wi-fi"></span>
+            </div>
+            <h3>Reste informé</h3>
+            <p>Lorsqu'une commande est crée autour de toi, tu reçois une notification ! Si tu as un petite faim, dépêche toi de rejoindre la commande pour faire partie de la commande groupée !</p>
+          </div>
+          <div class="app-features-box">
+            <div class="app-features-box-icon">
+              <span aria-hidden="true" class="typcn typcn-home"></span>
+            </div>
+            <h3>A la maison, comme d'habitude</h3>
+            <p>Pas besoin d'être en groupe pour commander, tu peux recevoir ta livraison dans ta chambre et tu règles le livreur comme d'habitude !</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="how-it-works-container section-container section-container-image-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 how-it-works section-description wow fadeIn">
+          <h2>Comment ça marche ?</h2>
+          <div class="divider-1 wow fadeInUp"><span></span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-1 how-it-works-box wow fadeInUp">
+          <div class="how-it-works-box-icon">
+            <span aria-hidden="true" class="typcn typcn-download"></span>
+            <span aria-hidden="true" class="how-it-works-step">1</span>
+          </div>
+          <h3>Télécharge l'app</h3>
+          <p>GroupEat est entièrement gratuit et est disponible sur l'App Store et le Google Play Store!</p>
+        </div>
+        <div class="col-sm-4 col-sm-offset-2 how-it-works-box wow fadeInUp">
+          <div class="how-it-works-box-icon">
+            <span aria-hidden="true" class="typcn typcn-pencil"></span>
+            <span aria-hidden="true" class="how-it-works-step">2</span>
+          </div>
+          <h3>Inscris-toi</h3>
+          <p>Inscris-toi en une minute avec ton email ENSTA, Polytechnique ou Supoptique ! Tu peux remplir la plupart de tes informations plus tard !</p>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-sm-offset-1 how-it-works-box wow fadeInDown">
+          <div class="how-it-works-box-icon">
+            <span aria-hidden="true" class="typcn typcn-ticket"></span>
+            <span aria-hidden="true" class="how-it-works-step">3</span>
+          </div>
+          <h3>Crée ta commande</h3>
+          <p>Choisis ton restaurant, fixe un FoodRush et fais ton choix de plats</p>
+        </div>
+        <div class="col-sm-4 col-sm-offset-2 how-it-works-box wow fadeInDown">
+          <div class="how-it-works-box-icon">
+            <span aria-hidden="true" class="typcn typcn-thumbs-up"></span>
+            <span aria-hidden="true" class="how-it-works-step">4</span>
+          </div>
+          <h3>Attends ton repas</h3>
+          <p>En attendant le livreur, tu risques de voir ta facture chuter au fur et à mesure que le groupe s'agrandit ! Au pire, tu ne paieras jamais plus cher que si tu avais commandé directement sans GroupEat !</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 section-bottom-button wow fadeInUp">
+          <a class="btn btn-link-1 scroll-link" href="#top-content">Télécharger</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- More features -->
+  <div class="more-features-container section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 more-features section-description wow fadeIn">
+          <h2>Quoi d'autre ?</h2>
+          <div class="divider-1 wow fadeInUp"><span></span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5 more-features-box wow fadeInLeft">
+          <img src="img/devices/iphone.png" alt="">
+        </div>
+        <div class="col-sm-7 more-features-box wow fadeInUp">
+          <div class="more-features-box-text">
+            <div class="more-features-box-text-icon">
+              <span aria-hidden="true" class="typcn typcn-volume-mute"></span>
+            </div>
+            <h3>Les notifications te dérangent ?</h3>
+            <div class="more-features-box-text-description">
+              Tu peux à tout moment désactiver ou modifier la fréquence de réception des notifications, depuis les réglages de l'application !
+            </div>
+          </div>
+          <div class="more-features-box-text">
+            <div class="more-features-box-text-icon">
+              <span aria-hidden="true" class="typcn typcn-th-list"></span>
+            </div>
+            <h3>Retrouve toutes tes commandes</h3>
+            <div class="more-features-box-text-description">
+              Tu peux retrouver directement sur l'application tes commandes en cours et l'historique de toutes celles que tu as passé auparavant. Plus question d'oublier un restaurant préféré ou un plat délicieux !
+            </div>
+          </div>
+          <div class="more-features-box-text">
+            <div class="more-features-box-text-icon">
+              <span aria-hidden="true" class="typcn typcn-group"></span>
+            </div>
+            <h3>Fais-toi livrer hors de ta chambre !</h3>
+            <div class="more-features-box-text-description">
+              Au moment du choix de l'adresse, tu peux demander à ce que ta commande soit livrée dans un des lieux fréquents de livraison, par exemple pour manger en groupe (bar/foyer des écoles par exemple) !
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to action -->
+  <div class="call-to-action-container section-container section-container-image-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 call-to-action section-description wow fadeInLeftBig">
+          <h2>Un problème ? Des suggestions ?</h2>
+          <div class="divider-1 wow fadeInUp"><span></span></div>
+          <p>
+            Toute l'équipe s'engage à répondre à toute demande, suggestion mais également à résoudre les problèmes que vous pouvez rencontrer au plus vite. N'hésitez pas à nous contacter !
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 section-bottom-button wow fadeInUp">
+          <a class="btn btn-link-1" href="mailto:contact@groupeat.fr">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About us -->
+  <div class="about-us-container section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 about-us section-description wow fadeIn">
+          <h2>L'équipe</h2>
+          <div class="divider-1 wow fadeInUp"><span></span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 about-us-box wow fadeInUp">
+          <div class="about-us-photo">
+            <img src="img/about/1.jpg" alt="" data-at2x="img/about/1.jpg">
+            <div class="about-us-role">CEO</div>
+          </div>
+          <h3>Sammy</h3>
+          <p>Co-fondateur, fan de techno, il gère le marketing, les partenariats avec les restaurants et les aspects business du projet.</p>
+          <div class="about-us-social">
+            <a href="#"><span class="typcn typcn-social-facebook"></span></a>
+            <a href="#"><span class="typcn typcn-social-twitter"></span></a>
+          </div>
+        </div>
+        <div class="col-sm-4 about-us-box wow fadeInDown">
+          <div class="about-us-photo">
+            <img src="img/about/etienne.jpg" alt="" data-at2x="img/about/etienne.jpg">
+            <div class="about-us-role">Développeur Front</div>
+          </div>
+          <h3>Etienne</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+          <div class="about-us-social">
+            <a href="https://www.facebook.com/titi.dm.9"><span class="typcn typcn-social-facebook"></span></a>
+          </div>
+        </div>
+        <div class="col-sm-4 about-us-box wow fadeInUp">
+          <div class="about-us-photo">
+            <img src="img/about/3.jpg" alt="" data-at2x="img/about/3.jpg">
+            <div class="about-us-role">Développeur Front</div>
+          </div>
+          <h3>Guillaume</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+          <div class="about-us-social">
+            <a href="#"><span class="typcn typcn-social-facebook"></span></a>
+            <a href="#"><span class="typcn typcn-social-twitter"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 about-us-box wow fadeInUp">
+          <div class="about-us-photo">
+            <img src="img/about/1.jpg" alt="" data-at2x="img/about/1.jpg">
+            <div class="about-us-role">Développeur Back</div>
+          </div>
+          <h3>Thibault</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+          <div class="about-us-social">
+            <a href="#"><span class="typcn typcn-social-facebook"></span></a>
+            <a href="#"><span class="typcn typcn-social-twitter"></span></a>
+          </div>
+        </div>
+        <div class="col-sm-4 about-us-box wow fadeInDown">
+          <div class="about-us-photo">
+            <img src="img/about/woody.jpg" alt="Woody Rousseau" data-at2x="img/about/woody.jpg">
+            <div class="about-us-role">Développeur Front</div>
+          </div>
+          <h3>Woody</h3>
+          <p>Co-fondateur, développeur front hybride et amateur de vinyles, il gère sur GroupEat les outils de développements côté front.</p>
+          <div class="about-us-social">
+            <a href="https://www.facebook.com/woody.rousseau"><span class="typcn typcn-social-facebook"></span></a>
+            <a href="https://twitter.com/WoodyRousseau"><span class="typcn typcn-social-twitter"></span></a>
+          </div>
+        </div>
+        <div class="col-sm-4 about-us-box wow fadeInDown">
+          <div class="about-us-photo">
+            <img src="img/about/1.jpg" alt="Jonathan" data-at2x="img/about/1.jpg">
+            <div class="about-us-role">Designer</div>
+          </div>
+          <h3>Jonathan</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+          <div class="about-us-social">
+            <a href="https://www.facebook.com/woody.rousseau"><span class="typcn typcn-social-facebook"></span></a>
+            <a href="https://twitter.com/WoodyRousseau"><span class="typcn typcn-social-twitter"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="testimonials-container section-container section-container-image-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 testimonials section-description wow fadeIn">
+          <h2>Témoignages</h2>
+          <div class="divider-1 wow fadeInUp"><span></span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 testimonial-list wow fadeInUp">
+          <div role="tabpanel">
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+                <div class="testimonial-image">
+                  <img src="img/testimonials/proto204.png" alt="" data-at2x="img/testimonials/proto204.png">
+                  <div class="testimonial-icon">
+                    <span aria-hidden="true" class="typcn typcn-pin"></span>
+                  </div>
+                </div>
+                <div class="testimonial-text">
+                  <p>
+                    "Une offre de restauration qu'on attendait et ultra optimisée !"<br>
+                    <a href="http://proto204.co/">Proto204, plateforme d'innovation, de création et de formation</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="js/index.bundle.js" charset="utf-8"></script>
 </body>
 </html>
