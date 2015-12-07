@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "Showcase website for GroupEat",
   "files": [
-    "etc",
     "img",
     "js",
     "less",
-    "mock",
     "test",
     "gulpfile.js",
     "index.html",
@@ -44,6 +42,9 @@
     "less-loader": "^2.2.1",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.4.3",
+    "shipit": "^0.7.4",
+    "shipit-cli": "^1.4.0",
+    "shipit-deploy": "^2.0.0",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.3",
     "webpack-dev-server": "^1.12.1"
