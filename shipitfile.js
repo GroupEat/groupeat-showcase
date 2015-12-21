@@ -4,7 +4,7 @@ module.exports = function (shipit) {
   shipit.initConfig({
     default: {
       workspace: '/tmp/showcase',
-      deployTo: '/home/vagrant/showcase',
+      deployTo: '~/showcase',
       repositoryUrl: 'git@github.com:GroupEat/groupeat-showcase.git',
       ignores: ['.git', 'node_modules', 'bower_components'],
       rsync: ['--del'],
