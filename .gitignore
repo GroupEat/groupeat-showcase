@@ -11,5 +11,6 @@ npm-debug.log
 
 *.bundle.js
 
+.idea
 node_modules
 bower_components

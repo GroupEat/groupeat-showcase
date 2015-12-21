@@ -1,4 +1,4 @@
-module.exports = function (shipit) {
+module.exports = shipit => {
   require('shipit-deploy')(shipit);
 
   shipit.initConfig({
@@ -21,21 +21,21 @@ module.exports = function (shipit) {
     }
   });
 
-  shipit.on('published', function() {
+  shipit.on('published', () => {
     return shipit.start('install');
   });
 
-  var npmInstall = function () {
-    return shipit.remote(
-      "cd " + shipit.releasePath +
-      " && npm install" +
-      " && ./node_modules/.bin/gulp build"
-    );
-  }
+  const npmInstall = () => {
+    return shipit.remote(`
+      cd ${shipit.releasePath}
+        && npm install
+        && ./node_modules/.bin/gulp build
+    `);
+  };
 
-  shipit.blTask('install', function() {
+  shipit.blTask('install', () => {
     return npmInstall()
-    .then(function () {
+    .then(() => {
       shipit.log('Install Done!');
     });
   });
