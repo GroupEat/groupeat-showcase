@@ -3,18 +3,20 @@ module.exports = function (shipit) {
 
   shipit.initConfig({
     default: {
-      workspace: '/tmp/groupeat-showcase',
-      deployTo: '/home/vagrant/groupeat-showcase',
-      repositoryUrl: 'https://github.com/GroupEat/groupeat-showcase.git',
+      workspace: '/tmp/showcase',
+      deployTo: '/home/vagrant/showcase',
+      repositoryUrl: 'git@github.com:GroupEat/groupeat-showcase.git',
       ignores: ['.git', 'node_modules', 'bower_components'],
       rsync: ['--del'],
       keepReleases: 3,
       shallowClone: true
     },
     staging: {
+      branch: 'staging',
       servers: 'vagrant@staging.groupeat.fr'
     },
     production: {
+      branch: 'production',
       servers: 'vagrant@groupeat.fr'
     }
   });
