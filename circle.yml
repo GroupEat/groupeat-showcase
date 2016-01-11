@@ -1,0 +1,14 @@
+machine:
+  node:
+    version:
+      5.1.0
+
+deployment:
+  production:
+    branch: production
+    commands:
+      - shipit production deploy
+  staging:
+    branch: staging
+    commands:
+      - shipit production deploy

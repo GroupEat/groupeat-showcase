@@ -1,6 +1,7 @@
 {
   "name": "groupeat-showcase",
   "version": "1.0.0",
+  "private": true,
   "description": "Showcase website for GroupEat",
   "files": [
     "img",
@@ -49,8 +50,8 @@
     "webpack-dev-server": "^1.12.1"
   },
   "engines": {
-    "node": "4.1.2",
-    "npm": "2.14.4"
+    "node": ">= 4.1.2",
+    "npm": ">= 2.14.4"
   },
   "scripts": {
     "postinstall": "./node_modules/.bin/bower install"
