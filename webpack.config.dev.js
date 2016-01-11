@@ -19,11 +19,11 @@ module.exports = {
     loaders: [
       {
         test: /\.css$/,
-        loader: 'style/useable!css!autoprefixer?browsers=last 5 version!'
+        loader: 'style/useable!css!autoprefixer?browsers=last 5 version'
       },
       {
         test: /\.less$/,
-        loader: 'style!css!autoprefixer?browsers=last 5 version!less!'
+        loader: 'style!css!autoprefixer?browsers=last 5 version!less'
       },
       {
         test: /\.js$/,
