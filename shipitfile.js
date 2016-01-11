@@ -25,16 +25,9 @@ module.exports = shipit => {
     return shipit.start('install');
   });
 
-  const npmInstall = () => {
-    return shipit.remote(`
-      cd ${shipit.releasePath}
-        && npm install
-        && ./node_modules/.bin/gulp build
-    `);
-  };
-
   shipit.blTask('install', () => {
-    return npmInstall()
+    return shipit
+    .remote(`cd ${shipit.releasePath} && npm instal && ./node_modules/.bin/gulp build`)
     .then(() => {
       shipit.log('Install Done!');
     });

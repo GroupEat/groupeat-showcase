@@ -11,4 +11,4 @@ deployment:
   staging:
     branch: staging
     commands:
-      - shipit production deploy
+      - shipit staging deploy
