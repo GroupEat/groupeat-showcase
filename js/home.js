@@ -22,25 +22,6 @@ jQuery(document).ready(function() {
   });
 
   /*
-  Background slideshow
-  */
-  $('.top-content').backstretch("img/backgrounds/1.jpg");
-  $('.how-it-works-container').backstretch("img/backgrounds/1.jpg");
-  $('.call-to-action-container').backstretch("img/backgrounds/1.jpg");
-  $('.testimonials-container').backstretch("img/backgrounds/1.jpg");
-
-  $('#top-navbar-1').on('shown.bs.collapse', function(){
-    $('.top-content').backstretch("resize");
-  });
-  $('#top-navbar-1').on('hidden.bs.collapse', function(){
-    $('.top-content').backstretch("resize");
-  });
-
-  $('a[data-toggle="tab"]').on('shown.bs.tab', function() {
-    $('.testimonials-container').backstretch("resize");
-  });
-
-  /*
   Modals
   */
   $('.launch-modal').on('click', function(e){
