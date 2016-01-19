@@ -14,6 +14,9 @@ gulp.task('build', callback => {
   gulp.src(['img/**/*'], {'base': '.'})
     .pipe(gulp.dest('dist/'));
 
+  gulp.src(['robots.txt'], {'base': '.'})
+    .pipe(gulp.dest('dist/'));
+
   webpack(config, (err, stats) => {
     if (err) {
       throw new gutil.PluginError('webpack', err);
