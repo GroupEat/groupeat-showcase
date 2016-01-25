@@ -3,6 +3,10 @@ machine:
     version:
       5.1.0
 
+test:
+  override:
+    - echo "Nothing to tests..."
+
 deployment:
   production:
     branch: production
