@@ -44,7 +44,7 @@
     "rimraf": "^2.4.3",
     "shipit": "^0.7.4",
     "shipit-cli": "^1.4.0",
-    "shipit-deploy": "^2.0.0",
+    "shipit-deploy": "2.0.0",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.3",
     "webpack-dev-server": "^1.12.1"
