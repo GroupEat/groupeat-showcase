@@ -11,8 +11,8 @@ deployment:
   production:
     branch: production
     commands:
-      - shipit production deploy
+      - npm run deploy:production
   staging:
     branch: staging
     commands:
-      - shipit staging deploy
+      - npm run deploy:staging
