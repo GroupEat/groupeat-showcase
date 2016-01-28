@@ -11,7 +11,7 @@ gulp.task('build', callback => {
 
   require('rimraf').sync('dist/');
 
-  gulp.src(['img/**/*', 'fonts/**/*', 'robots.txt', '404.html'], {'base': '.'})
+  gulp.src(['img/**/*', 'fonts/**/*', 'robots.txt', 'sitemap.xml', '404.html'], {'base': '.'})
     .pipe(gulp.dest('dist/'));
 
   webpack(config, (err, stats) => {
