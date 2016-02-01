@@ -8,10 +8,10 @@ test:
     - echo "Nothing to tests..."
 
 deployment:
-  production:
-    branch: production
+  prod:
+    branch: prod
     commands:
-      - npm run deploy:production
+      - npm run deploy:prod
   staging:
     branch: staging
     commands:
