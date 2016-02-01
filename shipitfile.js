@@ -15,8 +15,8 @@ module.exports = shipit => {
       branch: 'staging',
       servers: 'vagrant@staging.groupeat.fr'
     },
-    production: {
-      branch: 'production',
+    prod: {
+      branch: 'prod',
       servers: 'vagrant@groupeat.fr'
     }
   });
