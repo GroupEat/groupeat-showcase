@@ -7,7 +7,6 @@ module.exports = shipit => {
       deployTo: '~/showcase',
       repositoryUrl: 'git@github.com:GroupEat/groupeat-showcase.git',
       ignores: ['.git', 'node_modules', 'bower_components'],
-      rsync: ['--del'],
       keepReleases: 3,
       shallowClone: true
     },
