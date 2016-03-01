@@ -1,8 +1,12 @@
 #css
 css
 
-# dist
+#styles
+styles
+
+#dist
 dist
+bundle.config.js
 
 #mac
 .DS_Store
