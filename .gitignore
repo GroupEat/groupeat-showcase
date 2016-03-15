@@ -6,7 +6,6 @@ styles
 
 #dist
 dist
-bundle.config.js
 
 #mac
 .DS_Store
