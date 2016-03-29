@@ -1,16 +1,5 @@
-#css
-css
-
-# dist
-dist
-
-#mac
-.DS_Store
-
-npm-debug.log
-
-*.bundle.js
-
 .idea
+.DS_Store
+dist
 node_modules
 bower_components
